@@ -1,0 +1,108 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+/* General background for the app */
+ion-content {
+    --background: #121212; /* Fondo oscuro */
+}
+
+/* Header and Toolbar styling */
+ion-header ion-toolbar {
+    --background: #1e1e1e; /* Color oscuro para el header */
+    --color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+button {
+    --background: #bb86fc; /* Color primario de Material Design Dark */
+    --color: #000000;
+    border-radius: 8px;
+    padding: 12px 24px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    --background: #9965f4;
+    transform: translateY(-1px);
+}
+
+/* Input field styling */
+ion-item.custom-item {
+    margin-bottom: 16px;
+    --background: #1e1e1e;
+    --border-color: #bb86fc;
+    --highlight-color-focused: #bb86fc;
+}
+
+ion-input {
+    --color: #ffffff;
+    --placeholder-color: #666666;
+    --padding-start: 16px;
+    --border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Link styling */
+.link {
+    color: #bb86fc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.link:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+/* Header text styles */
+.main-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Footer styling */
+ion-footer {
+    --background: #1e1e1e;
+}
+
+ion-footer ion-toolbar {
+    --background: #1e1e1e;
+    --color: #bb86fc;
+}

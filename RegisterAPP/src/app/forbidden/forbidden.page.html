@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="main-title"><b>RegisterAPP</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="ion-text-center title">Acceso Denegado</h1>
+
+  <div class="box container">
+    <ion-icon name="alert-circle-outline" class="error-icon"></ion-icon>
+    
+    <h2 class="error-title">¡Ups! Parece que te has perdido</h2>
+    
+    <p class="error-message">
+      Por favor, vuelve a la página de inicio para continuar navegando.
+    </p>
+
+    <ion-row>
+      <ion-col>
+        <button routerLink="/inicio-main" type="button">
+          <ion-icon slot="start" name="home-outline"></ion-icon>
+          Volver al Inicio
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

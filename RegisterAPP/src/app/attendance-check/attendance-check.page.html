@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" class="back-arrow"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="main-title"><b>Confirmación</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="box">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          <ion-icon name="checkmark-circle" class="success-icon"></ion-icon>
+          <h2>¡Asistencia Registrada!</h2>
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <div class="message-container">
+          <p>Tu asistencia ha sido registrada exitosamente para la clase actual.</p>
+        </div>
+        
+        <button routerLink="/student-dashboard">
+          <ion-icon name="home-outline" slot="start"></ion-icon>
+          Volver al Inicio
+        </button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

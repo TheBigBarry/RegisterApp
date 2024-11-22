@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="main-title">
+      <b>RegisterAPP</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="welcome-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          <h3>Bienvenido, Estudiante</h3>
+        </ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <div class="box">
+      <ion-button class="custom-button" expand="block" routerLink="/horario">
+        <ion-icon slot="start" name="calendar-outline"></ion-icon>
+        <b>Ver Horario</b>
+      </ion-button>
+
+      <ion-button class="custom-button" expand="block" routerLink="/assistance">
+        <ion-icon slot="start" name="checkbox-outline"></ion-icon>
+        <b>Ver Asistencia</b>
+      </ion-button>
+
+      <ion-button class="custom-button" expand="block" routerLink="/credential">
+        <ion-icon slot="start" name="card-outline"></ion-icon>
+        <b>Credencial Virtual</b>
+      </ion-button>
+
+      <div class="divider">
+        <ion-text>Opciones de Cuenta</ion-text>
+      </div>
+
+      <ion-button class="custom-button logout-button" expand="block" (click)="logout()">
+        <ion-icon slot="start" name="log-out-outline"></ion-icon>
+        <b>Cerrar Sesión</b>
+      </ion-button>
+    </div>
+
+    <ion-button expand="block" class="qr-scanner-button" (click)="escanearQR()">
+      <ion-icon name="qr-code-outline"></ion-icon>
+      Escanear QR
+    </ion-button>
+
+
+  </div>
+</ion-content>

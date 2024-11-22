@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="main-title"><b>RegisterAPP</b></ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/student-dashboard" class="back-arrow"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="box">
+    <h1 class="title">Asistencia</h1>
+
+    <ion-list>
+      <ion-item *ngFor="let assistance of assistances">
+        <ion-label>
+          <h3>{{ assistance.subject }}</h3>
+          <p>Fecha: {{ assistance.date | date: 'dd/MM/yyyy' }}</p>
+          <p>Estado: {{ assistance.status }}</p>
+          <p *ngIf="assistance.comments">Comentario: {{ assistance.comments }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <ion-button expand="block" color="primary" (click)="addSampleAssistance()">
+    Agregar Asistencia
+  </ion-button>
+  
+</ion-content>

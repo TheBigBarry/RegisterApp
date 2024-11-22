@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="main-title"><b>RegisterAPP</b></ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/student-dashboard" class="back-arrow"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="box">
+    <h1 class="title">Horario</h1>
+    <ion-list>
+      <ion-item *ngFor="let clase of clases">
+        <ion-label>
+          <h2>{{ clase.materia }}</h2>
+          <p>Día: {{ clase.dia }}</p>
+          <p>Hora: {{ clase.hora }}</p>
+          <p>Sigla: {{ clase.siglas }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

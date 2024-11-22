@@ -1,0 +1,106 @@
+/* Estilo para la animación de la flecha */
+.back-arrow {
+    transition: transform 0.3s ease-in-out;
+    color: #bb86fc;
+}
+
+.back-arrow:hover {
+    transform: translateX(-5px);
+    color: #9965f4;
+}
+
+  /* Estilo para el contenedor principal */
+.box {
+    padding: 25px;
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+ion-item.custom-item {
+    --background: #2d2d2d;
+    --border-color: #bb86fc;
+    --highlight-color-focused: #bb86fc;
+    --padding-start: 16px;
+    --padding-end: 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+ion-label {
+    color: #bb86fc;
+    font-weight: 500;
+}
+
+ion-input {
+    --color: #ffffff;
+    --placeholder-color: #666666;
+}
+
+  /* Estilo para el botón */
+button {
+    width: 100%;
+    background: #bb86fc;
+    color: #000000;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #9965f4;
+    transform: translateY(-2px);
+}
+
+  /* Estilo para los enlaces */
+.link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+  /* Estilo para la cabecera */
+ion-header {
+    background-color: #ffffff;
+}
+
+ion-toolbar {
+    background-color: #f8f9fa;
+}
+
+.main-title {
+    color: #bb86fc;
+    font-weight: 500;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+.title-label {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Estilo para el mensaje de error si lo necesitas */
+.error-message {
+    text-align: center;
+    margin-bottom: 20px;
+    
+    p {
+        color: #cf6679;
+        margin: 0;
+        font-size: 14px;
+    }
+}

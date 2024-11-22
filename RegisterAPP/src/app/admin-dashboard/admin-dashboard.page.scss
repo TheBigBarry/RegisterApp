@@ -1,0 +1,113 @@
+// Estilos del header
+.main-title {
+  color: #bb86fc;
+  font-weight: 500;
+  text-align: center;
+}
+
+// Contenedor principal
+.welcome-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+// Estilos de la tarjeta
+ion-card {
+  --background: #1e1e1e;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  
+  ion-card-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    
+    h3 {
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+}
+
+// Contenedor principal
+.box {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 25px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+// Título de sección
+.section-title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+// Lista personalizada
+.custom-list {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+// Items de la lista
+ion-item.custom-item {
+  --background: #2d2d2d;
+  --border-color: #bb86fc;
+  --border-radius: 8px;
+  margin-bottom: 10px;
+  
+  ion-label {
+    h3 {
+      color: #ffffff;
+      font-weight: 500;
+    }
+    
+    p {
+      color: #bbbbbb;
+    }
+    
+    .role-text {
+      color: #bb86fc;
+    }
+  }
+}
+
+// Select de roles
+.role-select {
+  --background: #2d2d2d;
+  --color: #ffffff;
+  --placeholder-color: #bb86fc;
+  max-width: 150px;
+  
+  &::part(icon) {
+    color: #bb86fc;
+  }
+}
+
+// Botón personalizado
+ion-button.custom-button {
+  --background: #bb86fc;
+  --background-hover: #9965f4;
+  --background-activated: #965f4;
+  --color: #000000;
+  margin: 10px 0;
+  height: 48px;
+  font-weight: 500;
+  --border-radius: 8px;
+}
+
+.title-divider {
+    color: #ffffff;
+    font-weight: 500;
+}
+

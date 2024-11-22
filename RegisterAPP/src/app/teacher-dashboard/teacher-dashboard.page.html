@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="main-title">
+      <b>RegisterAPP</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="welcome-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          <h3>Bienvenido, Profesor</h3>
+        </ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <div class="box">
+      <ion-button class="custom-button" expand="block" routerLink="/teacher-schedule">
+        <ion-icon slot="start" name="calendar-outline"></ion-icon>
+        <b>Ver Horario</b>
+      </ion-button>
+
+      <ion-button class="custom-button" expand="block" routerLink="/attendance">
+        <ion-icon slot="start" name="qr-code-outline"></ion-icon>
+        <b>Tomar Asistencia</b>
+      </ion-button>
+
+      <ion-button class="custom-button" expand="block" routerLink="/attendance-history">
+        <ion-icon slot="start" name="list-outline"></ion-icon>
+        <b>Historial de Asistencia</b>
+      </ion-button>
+
+      <div class="divider">
+        <ion-text>Opciones de Cuenta</ion-text>
+      </div>
+
+      <ion-button class="custom-button logout-button" expand="block" (click)="logout()">
+        <ion-icon slot="start" name="log-out-outline"></ion-icon>
+        <b>Cerrar Sesión</b>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

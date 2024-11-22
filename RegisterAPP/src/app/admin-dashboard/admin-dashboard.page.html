@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="main-title">
+      <b>RegisterAPP</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="welcome-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          <h3>Panel de Administración</h3>
+        </ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <div class="box">
+      <h2 class="section-title">Gestión de Usuarios</h2>
+      
+      <ion-list class="custom-list">
+        <ion-item *ngFor="let user of users" class="custom-item">
+          <ion-label>
+            <h3>{{ user.firstName }} {{ user.lastName }}</h3>
+            <p>{{ user.email }}</p>
+            <p class="role-text">Rol: {{ user.role }}</p>
+          </ion-label>
+          <ion-select 
+            class="role-select"
+            placeholder="Cambiar rol" 
+            (ionChange)="updateRole(user.uid, $event.detail.value)">
+            <ion-select-option value="alumno">Alumno</ion-select-option>
+            <ion-select-option value="docente">Docente</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <div class="divider">
+        <ion-text class="title-divider">Opciones de Cuenta</ion-text>
+      </div>
+
+      <ion-button class="custom-button logout-button" expand="block" (click)="logout()">
+        <ion-icon slot="start" name="log-out-outline"></ion-icon>
+        <b>Cerrar Sesión</b>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

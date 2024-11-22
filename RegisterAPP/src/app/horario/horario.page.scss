@@ -1,0 +1,45 @@
+/* Reutilización de tus estilos */
+.main-title {
+    color: #bb86fc;
+    font-weight: 500;
+  }
+  
+  .back-arrow {
+    --color: #bb86fc;
+  }
+  
+  .title {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 2rem 0;
+  }
+  
+  .box {
+    padding: 25px;
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo de los elementos de la lista */
+  ion-item {
+    --border-color: #444;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #2e2e2e;
+  }
+  
+  ion-label h2 {
+    color: #bb86fc;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  ion-label p {
+    color: #ffffff;
+    font-size: 14px;
+  }
+  

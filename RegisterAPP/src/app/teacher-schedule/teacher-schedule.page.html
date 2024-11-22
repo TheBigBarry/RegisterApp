@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="main-title"><b>RegisterAPP</b></ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/student-dashboard" class="back-arrow"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="schedule-wrapper">
+    <!-- Recorremos los días y sus clases -->
+    <div *ngFor="let group of groupedHorario" class="day-section">
+      <div class="day-title">{{ group.dia }}</div>
+
+      <div *ngFor="let clase of group.clases" class="class-card">
+        <div class="class-header">
+          <span class="class-type">{{ clase.tipo }}</span>
+          <span class="class-name">{{ clase.clase }}</span>
+        </div>
+
+        <div class="class-info">
+          <div class="info-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>{{ clase.hora }}</span>
+          </div>
+          <div class="info-item">
+            <ion-icon name="location-outline"></ion-icon>
+            <span>{{ clase.ubicacion }}</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <ion-button (click)="eliminarClase(clase)" color="danger" size="small" fill="outline">
+            <ion-icon slot="icon-only" name="trash"></ion-icon>
+          </ion-button>
+          <ion-button (click)="agregarClase(group.dia)" color="primary" size="small" fill="outline">
+            <ion-icon slot="icon-only" name="add"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ion-footer>
+    <ion-button expand="block" color="primary" (click)="guardarHorario()" class="save-button">
+      Guardar Horario
+    </ion-button>
+  </ion-footer>
+</ion-content>

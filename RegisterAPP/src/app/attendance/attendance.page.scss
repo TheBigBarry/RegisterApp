@@ -1,0 +1,57 @@
+/* Estilo para el contenedor principal */
+.box {
+  padding: 25px;
+  max-width: 400px;
+  margin: 2rem auto;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para la cabecera */
+ion-header {
+  background-color: #ffffff;
+}
+
+ion-toolbar {
+  background-color: #f8f9fa;
+}
+
+.main-title {
+  color: #bb86fc;
+  font-weight: 500;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/* Estilo para el contenedor del QR */
+.qr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  
+  qrcode {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(187, 134, 252, 0.2);
+  }
+}
+
+/* Estilo para la animación de la flecha */
+.back-arrow {
+  transition: transform 0.3s ease-in-out;
+  color: #bb86fc;
+}
+
+.back-arrow:hover {
+  transform: translateX(-5px);
+  color: #9965f4;
+}

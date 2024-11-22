@@ -1,0 +1,125 @@
+// Estilos del header
+.main-title {
+  color: #bb86fc;
+  font-weight: 500;
+  text-align: center;
+}
+
+// Contenedor principal
+.welcome-container {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+// Estilos de la tarjeta
+ion-card {
+  --background: #1e1e1e;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  
+  ion-card-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    
+    h3 {
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+}
+
+// Contenedor de botones
+.box {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 25px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+// Estilo de botones personalizados
+ion-button.custom-button {
+  --background: #bb86fc;
+  --background-hover: #9965f4;
+  --background-activated: #9965f4;
+  --color: #000000;
+  margin: 10px 0;
+  height: 48px;
+  font-weight: 500;
+  --border-radius: 8px;
+  --box-shadow: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    --background: #9965f4;
+    transform: translateY(-2px);
+  }
+  
+  ion-icon {
+    margin-right: 8px;
+    color: #000000;
+  }
+}
+
+// Botón de cerrar sesión con color diferente
+.logout-button {
+  --background: #cf6679;
+  --background-hover: #b4404f;
+  --background-activated: #b4404f;
+  
+  &:hover {
+    --background: #b4404f;
+  }
+}
+
+// Divisor con línea
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  
+  ion-text {
+    color: #ffffff;
+    padding: 0 15px;
+  }
+  
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #333333;
+    margin: 0 15px;
+  }
+}
+
+// Estilo especial para el botón de escáner QR
+ion-button.qr-scanner-button {
+  --background: linear-gradient(135deg, #9965f4, #6b2fdc);
+  --background-hover: linear-gradient(135deg, #8750e3, #5b28b8);
+  --background-activated: linear-gradient(135deg, #8750e3, #5b28b8);
+  --color: #ffffff;
+  margin: 15px 0;
+  height: 55px;
+  font-weight: 600;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 15px rgba(153, 101, 244, 0.3);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-3px);
+    --box-shadow: 0 6px 20px rgba(153, 101, 244, 0.4);
+  }
+  
+  ion-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ffffff;
+  }
+}

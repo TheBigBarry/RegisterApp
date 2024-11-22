@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "angularx-qrcode": "^18.0.2",
+    "primeng": "^17.18.11"
+  },
+  "devDependencies": {
+    "@angular/cli": "18.2.12"
+  }
+}

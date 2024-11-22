@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="main-title">
+      <b>RegisterAPP</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="welcome-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          <h3>Inicia sesión o registra tu cuenta para poder utilizar correctamente RegisterAPP</h3>
+        </ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <div class="box">
+      <ion-button class="custom-button" expand="block" routerLink="/login">
+        <ion-icon slot="start" name="log-in-outline"></ion-icon>
+        <b>Iniciar Sesión</b>
+      </ion-button>
+
+      <div class="divider">
+        <ion-text>O</ion-text>
+      </div>
+
+      <ion-text class="subtitle">
+        ¿Ya eres un usuario?
+      </ion-text>
+
+      <ion-button class="custom-button" expand="block" routerLink="/register">
+        <ion-icon slot="start" name="create-outline"></ion-icon>
+        <b>Registro</b>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

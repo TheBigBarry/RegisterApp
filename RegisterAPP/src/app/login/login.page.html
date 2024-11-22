@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <!-- Titulo Principal RegisterAPP -->
+    <ion-title class="main-title"><b>RegisterAPP</b></ion-title>
+    <ion-buttons slot="end" routerLink="/inicio-main">
+      <ion-icon size="large" name="arrow-back-outline" class="back-arrow"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h1 class="ion-text-center title">Inicio de Sesión</h1>
+
+  <div class="box container">
+
+    <ion-item class="custom-item">
+      <ion-label class="title-email" for="email1" position="floating">Correo</ion-label>
+      <ion-input id="email1" name="email" type="text" [(ngModel)]="loginUser.email" required></ion-input>
+    </ion-item>
+
+    <ion-item class="custom-item">
+      <ion-label class="title-password" for="password1" position="floating">Contraseña</ion-label>
+      <ion-input id="password1" name="password" type="password" [(ngModel)]="loginUser.password" required></ion-input>
+    </ion-item>
+
+    <!-- mensaje de error (NUEVO)-->
+    <div class="error-message" *ngIf="errorMessage">
+      <ion-text color="danger">
+        <p>{{ errorMessage }}</p>
+      </ion-text>
+    </div>
+
+    <ion-row>
+      <ion-col>
+        <button (click)="login(loginUser)" type="submit">Iniciar Sesión</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-margin-top">
+      <ion-col class="ion-text-center">
+        <a routerLink="/register" class="link">¿No tienes cuenta? Regístrate aquí</a>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+</ion-content>

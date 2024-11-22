@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="main-title"><b>RegisterAPP</b></ion-title>
+    <ion-buttons slot="end" routerLink="/inicio-main">
+      <ion-icon size="large" name="arrow-back-outline" class="back-arrow"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="ion-text-center title">Registro</h1>
+
+  <form>
+    <div class="box container">
+      <ion-item class="custom-item">
+        <ion-label class="title-label" position="floating">Nombre</ion-label>
+        <ion-input type="text" name="firstName" [(ngModel)]="registerUser.firstName" required></ion-input>
+      </ion-item>
+      
+      <ion-item class="custom-item">
+        <ion-label class="title-label" position="floating">Apellido</ion-label>
+        <ion-input type="text" name="lastName" [(ngModel)]="registerUser.lastName" required></ion-input>
+      </ion-item>
+  
+      <ion-item class="custom-item">
+        <ion-label class="title-label" for="email1" position="floating">Correo</ion-label>
+        <ion-input id="email1" name="email" type="text" [(ngModel)]="registerUser.email" required></ion-input>
+      </ion-item>
+  
+      <ion-item class="custom-item">
+        <ion-label class="title-label" for="password1" position="floating">Contraseña</ion-label>
+        <ion-input id="password1" name="password" type="password" [(ngModel)]="registerUser.password" required></ion-input>
+      </ion-item>
+  
+      <ion-row>
+        <ion-col>
+          <button (click)="register(registerUser)" type="submit">Registrar</button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </form>
+</ion-content>

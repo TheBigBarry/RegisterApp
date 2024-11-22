@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-title class="main-title">Qr para Asistencia</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/student-dashboard" class="back-arrow"></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="box">
+    <h1 class="title">Código QR de Asistencia</h1>
+    <div class="qr-container">
+      <qrcode [qrdata]="qrData" [width]="256"></qrcode>
+    </div>
+  </div>
+</ion-content>
